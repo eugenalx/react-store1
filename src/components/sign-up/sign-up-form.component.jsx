@@ -6,6 +6,7 @@ import {
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
 
+
 import "./sign-up-form.style.scss";
 
 
@@ -23,6 +24,7 @@ const SignUpForm = () => {
     setFormFields(defaultFormFields);
   };
 
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (password !== confirmPassword) {
@@ -35,6 +37,8 @@ const SignUpForm = () => {
         email,
         password
       );
+
+
       await createUserDocumentFromAuth(user, { displayName });
       resetFormFields();
     } catch (error) {
