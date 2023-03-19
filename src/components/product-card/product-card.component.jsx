@@ -3,7 +3,7 @@ import { useContext } from "react";
 // import { UserContext } from "../../contexts/user.context";
 import { CartContext } from "../../contexts/cart.context";
 import Button from "../button/button.component";
-import "./product-card.style.scss";
+import "./product-card.styles.scss";
 
 const ProductCard = ({ product }) => {
   const { name, price, imageUrl } = product;
