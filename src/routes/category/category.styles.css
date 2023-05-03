@@ -1,0 +1,13 @@
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  row-gap: 3.2rem;
+}
+
+.category-title {
+  font-size: 38px;
+  margin-bottom: 25px;
+  text-align: center;
+}/*# sourceMappingURL=category.styles.css.map */
