@@ -4,6 +4,9 @@ export const SignUpContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 25rem;
+    @media screen and (max-width: 792px) {
+        width: fit-content;
+       }
 `
 
 export const H2Font = styled.h2`

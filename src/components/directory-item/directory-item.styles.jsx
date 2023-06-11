@@ -2,9 +2,13 @@ import styled from "styled-components";
 export const BackgroundImage = styled.div`
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     background-size: cover;
     background-position: center;
     bacground-image: ${({imageUrl}) => `url(${imageUrl})`};
+    @meda screen and (max-width: 792px){
+        border-radius: 50px;
+    }
 ` 
 
 export const Body = styled.div`
@@ -18,6 +22,10 @@ export const Body = styled.div`
     background-color: white;
     opacity: 0.7;
     position: absolute;
+    border-radius: 10px;
+
+  
+
 
     h2 {
         font-weight: bold;
@@ -31,6 +39,14 @@ export const Body = styled.div`
         font-weight: lighter;
         font-size: 16px;
     }
+
+    @media screen and (max-width: 792px){
+        padding: 0 15px;
+        border-radius: 10px
+    }
+
+    
+
 `
 export const DirectoryItemContainer = styled.div`
     min-width: 30%;
@@ -41,7 +57,16 @@ export const DirectoryItemContainer = styled.div`
     justify-content: center;
     border: 1px solid black;
     margin: 0 7.5px 15px;
-    overflow: hidden;
+    overflow: hidden; 
+    border-radius: 10px;
+
+    &:first-child {
+        margin-right: 7.5px;
+        }
+    
+    &:last-child {
+        margin-left: 7.5px;
+        }
 
     &:hover {
         cursor: pointer;
@@ -55,14 +80,13 @@ export const DirectoryItemContainer = styled.div`
           opacity: 0.9;
         }
     }
+    @meda screen and (max-width: 792px){
+        border-radius: 50px;
+    }
 
-    &:first-child {
-        margin-right: 7.5px;
-        }
     
-    &:last-child {
-        margin-left: 7.5px;
-        }
+
+    
     `
    
   
